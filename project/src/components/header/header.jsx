@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header()  {
   return (
     <header className="page-header film-card__head">
       <div className="logo">
-        <a className="logo__link" href="#/">
+        <Link className="logo__link" to="/">
           <span className="logo__letter logo__letter--1">W</span>
           <span className="logo__letter logo__letter--2">T</span>
           <span className="logo__letter logo__letter--3">W</span>
-        </a>
+        </Link>
       </div>
       <ul className="user-block">
         <li className="user-block__item">
@@ -17,7 +18,7 @@ function Header()  {
           </div>
         </li>
         <li className="user-block__item">
-          <a className="user-block__link" href="#/">Sign out</a>
+          <Link className="user-block__link" to="/">Sign out</Link>
         </li>
       </ul>
     </header>
